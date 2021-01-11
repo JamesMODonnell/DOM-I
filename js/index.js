@@ -38,6 +38,7 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+// 
 
 
 const logoImg = document.querySelector("#logo-img");
@@ -48,9 +49,23 @@ const codeImage = document.querySelector("#cta-img");
 console.log(codeImage);
 codeImage.src = "img/header-img.png";
 
-const codeImage2 = div.querySelector("#middle-img");
+const codeImage2 = document.querySelector("#middle-img");
 console.log(codeImage2);
 codeImage2.src = "img/mid-page-accent.jpg";
 
 
 
+const firstSection = document.querySelector(".cta-text");
+const largeText = firstSection.querySelector("h1");
+const firstButton = firstSection.querySelector("button");
+largeText.textContent = "DOM IS AMAZE-BALLS";
+firstButton.textContent = "GET STARTED";
+
+
+document.getElementById("a").style.color = "green";
+
+const blogLink = document.createElement("a");
+blogLink.textContent = "more DOM info";
+blogLink.href = "#";
+console.log(blogLink, "Bloglink")
+document.querySelector("nav").appendChild(blogLink);
