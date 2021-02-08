@@ -37,9 +37,6 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
-// 
-
 
 const logoImg = document.querySelector("#logo-img");
 console.log(logoImg);
